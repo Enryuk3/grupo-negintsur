@@ -1,0 +1,62 @@
+.banner{
+    height: 86vh;
+    background-image: url(../img/hands-wallpaper.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+h1{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.quienes-somos{
+    background-color: #fafbfa;    ;
+}
+
+.quienes-somos-info{
+    text-align: justify;
+} 
+
+.servicios p{
+    text-align: justify;
+}
+
+.bd-navbar{
+    background-image: url(../img/background-square.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+} 
+.bd-navbar .navbar-nav .nav-link{
+    color: rgba(255,255,255,0.85)
+}
+.bd-navbar .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+
+footer{
+    background-color: #8f0c09;
+}
+
+
+.tr{
+    vertical-align: -0.125em;
+    fill: white;
+}
+
+@media screen and (max-width: 426px) {
+    
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    h1{
+        font-size: 20px;
+    }
+    
+}
+    
