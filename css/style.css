@@ -77,6 +77,12 @@ footer{
 }
 
 
+/* Servicios */
+.servicios-info p{
+    text-align: justify;
+}
+
+
 @media screen and (max-width: 426px) {
     
     h1{
