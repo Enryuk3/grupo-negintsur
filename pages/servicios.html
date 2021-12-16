@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +12,8 @@
     <!-- Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <!-- Title -->
-    <title>Contáctanos</title>
+    <title>Servicios</title>
 </head>
-
 <body>
     <!-- NavBar -->
     <nav class=" navbar navbar-expand-md navbar-light bg-light shadow-sm py-4">
@@ -32,9 +30,9 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./contacto.html">Contactános</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./contacto.html">Contactános</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li> -->
                 </ul>
             </div>
@@ -45,60 +43,41 @@
     <!--Banner-->
     <div class=" banner-contacto">
         <div class="container py-5">
-            <h4 class="text-white">Contactános</h4>
+            <h4 class="text-white">Servicios</h4>
         </div>
     </div>
     <!--End Banner-->
 
-
-    <section class=" container-fluid container-bg">
-        <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-2 align-items-center my-2">
-                <div class="col">
-                    <!-- Formulario -->
-                    <div class="container p-3 ">
-                        <h4 class="text-center">Tienes un problema legal?</h4>
-                        <p class="text-center">Envianos tus datos, y realiza tu consulta para asesorarte</p>
-                        <form id="contactForm">
-                            <div class="mb-3">
-                                <label class="form-label" for="name">Nombres y Apellidos</label>
-                                <input class="form-control" id="name" type="text" placeholder="Nombres y Apellidos">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="emailAddress">Email</label>
-                                <input class="form-control" id="emailAddress" type="email" placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label" for="message">Consulta y/o reserva tu cita</label>
-                                <textarea class="form-control" id="message" type="text"
-                                    placeholder="Escribe tu mensaje"
-                                    style="height: 10rem;"></textarea>
-                            </div>
-                            <div class="d-grid">
-                                <button class="btn btn-danger" type="submit">Enviar</button>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End Formulario -->
-                </div>
-
-                <div class="col">
-                    <div class="my-2">
-    
-                        <h4 class="pb-2">¿Cómo llegar?</h4>
-                        <div class="ratio ratio-4x3 mb-4">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.9608258974386!2d-75.72980420269144!3d-14.060706524976958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e2bb898c77bb%3A0x60278d58821a2a39!2sC.%20Callao%20362%2C%20Ica%2011002!5e0!3m2!1ses-419!2spe!4v1636971794584!5m2!1ses-419!2spe"
-                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
+    <!-- Servicios info-->
+    <section class="container servicios-info">
+        <div class="row  py-5">
+            <div class="col-12 col-md-6 col-lg-7">
+                <p>Nuestro estudio de abogados ofrece a los clientes Asesoría Legal Especializada en forma personalizada, a través de nuestro Staff de Abogados altamente capacitados y con experiencia en las diversas áreas del derecho. </p>
+                <p>Brindamos Asesoría Jurídica de la más alta calidad, personalizando la relación con nuestros clientes, generandoles, discreción, seguridad y comodidad, logrando formar, de esta manera, relaciones de estrecha confianza y de largo plazo.</p>
             </div>
-
-            
+            <div class="col-12 col-md-6 col-lg-5">
+                <img class="img-fluid" src="../img/smiling-2.webp" alt="nosotros-arrow">
+            </div>
         </div>
-
     </section>
+    <!-- End Servicios info-->
+
+    <!-- Servicios detallados -->
+    <section class="servicios container py-4">
+        <p class="text-start h5 pb-3">Cónoce todos los servicios que Brindamos:</p>
+        <!-- Galeria de Imagenes -->
+        <div class="row pb-3">
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="../img/derecho-laboral.png" alt="" >
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="../img/transporte-transito.png" alt="" >
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="../img/contratos-cartas-notariales.png" alt="" >
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="../img/registro-de-marca.png" alt="" >
+        </div>
+        <!-- End Galeria de Imagenes -->
+    </section>
+    <!-- End Servicios detallados -->
+
+
+
 
     <!-- Semifooter -->
     <div class="navbar navbar-expand-xxl navbar-dark  bd-navbar">
@@ -117,8 +96,8 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 ">Home</a></li>
                     <li class="nav-item mb-2"><a href="./nosotros.html" class="nav-link p-0 ">Nosotros</a></li>
-                    <li class="nav-item mb-2"><a href="./servicios.html" class="nav-link p-0 ">Servicios</a></li>
-                    <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link active p-0 ">Contáctanos</a></li>
+                    <li class="nav-item mb-2"><a href="./servicios.html" class="nav-link active p-0 ">Servicios</a></li>
+                    <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 ">Contáctanos</a></li>
                 </ul>
             </div>
 
@@ -158,5 +137,4 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
