@@ -52,8 +52,14 @@ footer{
     background-position: bottom;
     background-repeat: no-repeat;
     height: auto;
-
 }
+
+.container-bg{
+    background-color: #eee;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
 @media screen and (max-width: 426px) {
     
     h1{
