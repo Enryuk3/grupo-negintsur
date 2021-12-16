@@ -45,6 +45,15 @@ footer{
     fill: white;
 }
 
+
+.banner-contacto{
+    background-image: url(../img/banner2-background.webp);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: auto;
+
+}
 @media screen and (max-width: 426px) {
     
     h1{
