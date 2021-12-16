@@ -60,6 +60,23 @@ footer{
     margin-bottom: 35px;
 }
 
+.nosotros-info p{
+    text-align: justify;
+}
+
+
+.clouds{
+    background-image: url(../img/wallpaper-redclouds.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+/* Logo mision y Vision */
+.logo-mv{
+    width:100px;
+}
+
+
 @media screen and (max-width: 426px) {
     
     h1{
