@@ -21,10 +21,17 @@
     background-color: #fafbfa;    
 }
 
-.quienes-somos__info{
+.quienes-somos__info h2{
     text-align: justify;
 } 
+.quienes-somos__info p{
+    text-align: justify;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+/* End Seccion Quienes Somos */
 
+/* All buttons */
 .btn-red{
     color: #fff;
     background-color: #a10c08;
@@ -38,13 +45,22 @@
     box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
 }
 
+.btn svg{
+    display: ruby;
+    transition: all .5s;
+    transform: scale(0) translateX(0);
+}
+.btn:hover svg{
+    display: inline-block;
+    fill: #fff;
+    transform:  scale(1)  translateX(1px);;
+    
+}
+
 /* Seccion Servicios */
 .servicios p{
     text-align: justify;
 }
-
-
-
 
 
 /* background footer */
@@ -70,6 +86,32 @@ footer{
     vertical-align: -0.125em;
     fill: white;
 }
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    /* animation-delay: .2s ; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 
 /* banner para todos los servicios*/
@@ -148,6 +190,5 @@ footer{
     .banner h1{
         font-size: 20px;
     }
-    
 }
-    
+
