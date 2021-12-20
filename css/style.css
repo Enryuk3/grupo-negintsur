@@ -1,3 +1,8 @@
+.bg-white{
+    background-color: #fff;
+}
+
+/* Banner Principal */
 .banner{
     height: 86vh;
     background-image: url(../img/hands-wallpaper.webp);
@@ -5,23 +10,44 @@
     background-position: bottom;
     background-repeat: no-repeat;
 }
-h1{
+.banner h1{
     font-size: 45px;
     font-weight: 700;
 }
+/* End Banner Principal */
 
+/* Seccion Quienes Somos */
 .quienes-somos{
-    background-color: #fafbfa;    ;
+    background-color: #fafbfa;    
 }
 
-.quienes-somos-info{
+.quienes-somos__info{
     text-align: justify;
 } 
 
+.btn-red{
+    color: #fff;
+    background-color: #a10c08;
+    border-color: #a10c08;
+}
+
+.btn-red:hover, .btn-red:focus, .btn-red:active{
+    color: #fff;
+    background-color:  #8f0c09;
+    background-color: #8f0c0f;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
+}
+
+/* Seccion Servicios */
 .servicios p{
     text-align: justify;
 }
 
+
+
+
+
+/* background footer */
 .bd-navbar{
     background-image: url(../img/background-square.webp);
     background-size: cover;
@@ -38,7 +64,7 @@ h1{
 footer{
     background-color: #8f0c09;
 }
-
+/* Fin background footer */ 
 
 .tr{
     vertical-align: -0.125em;
@@ -46,6 +72,7 @@ footer{
 }
 
 
+/* banner para todos los servicios*/
 .banner-contacto{
     background-image: url(../img/banner2-background.webp);
     background-size: cover;
@@ -53,17 +80,13 @@ footer{
     background-repeat: no-repeat;
     height: auto;
 }
+/* End banner para todos los servicios */
 
-.container-bg{
-    background-color: #eee;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
 
+/* Nosotros */
 .nosotros-info p{
     text-align: justify;
 }
-
 
 .clouds{
     background-image: url(../img/wallpaper-redclouds.webp);
@@ -71,28 +94,58 @@ footer{
     background-position: bottom;
     background-repeat: no-repeat;
 }
-/* Logo mision y Vision */
+
+
+
 .logo-mv{
     width:100px;
 }
+/* End nosotros */
 
 
-/* Servicios */
+/* Pagina Servicios */
 .servicios-info p{
     text-align: justify;
 }
 
+.servicios .galeria img{
+    box-shadow: 0 2px 2px rgb(0 0 0 / 20%);
+    opacity: .9;
+    transition: all .8s;
+}
+.servicios .galeria img:hover{
+    opacity: 1;
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0 0 0 / 20%);
+    
+}
+
+/* End Pagina Servicios */
+
+
+/* Asesoria en derecho laboral */
+.derecho-laboral__info p{
+    text-align: justify;
+}
+
+
+/* Background gris */
+.container-bg{
+    background-color: #eee;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 
 @media screen and (max-width: 426px) {
     
-    h1{
+    .banner h1{
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 320px) {
     
-    h1{
+    .banner h1{
         font-size: 20px;
     }
     
