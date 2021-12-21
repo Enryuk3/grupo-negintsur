@@ -13,8 +13,19 @@
 .banner h1{
     font-size: 45px;
     font-weight: 700;
+    line-height: 1.1em;
+}
+.banner p{
+    font-size: 18px;
+    font-weight: 600;
+ 
 }
 /* End Banner Principal */
+
+/* Todas las section */
+section{
+    padding: 4% 0;
+}
 
 /* Seccion Quienes Somos */
 .quienes-somos{
@@ -178,17 +189,17 @@ footer{
     margin-bottom: 35px;
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 767px) {
     
     .banner h1{
-        font-size: 30px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .banner P{
+        font-size: 18px;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 320px) {
-    
-    .banner h1{
-        font-size: 20px;
-    }
-}
 
