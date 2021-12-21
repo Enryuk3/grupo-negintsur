@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <!-- Title -->
     <title>Inicio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,25 +46,26 @@
 
     <!-- Banner -->
     <div class="banner container-fluid ">
-        <div class="container pt-5 text-white fade-in">
-            <h1>It's important to me <br>that you're happy.</h1>
-            <p class="h5"> This is gonna be a happy little seascape. </p>
+        <div class="container pt-5 text-white fade-in" data-aos="fade">
+            <h1>¿Está tu empresa preparada para <br>afrontar posibles crisis legales?</h1>
+            <p> Con NEGINTSUR ABOGADOS, conoce nuevas formas de solucionar controversias <br>
+                y las estrategias de prevención más convenientes para tu negocio. </p>
         </div>
     </div>
     <!-- End Banner -->
     
     <!-- Quienes Somos -->
-    <div class="quienes-somos  py-5">
+    <section class="quienes-somos  my-md-4">
         <div class=" d-lg-flex justify-content-around container">
-            <div class="container-fluid col-sm-12 c col-lg-6 align-self-center " >
-                <img class="img-fluid" src="./img/dude-like.webp" alt="muchacho-alegre">
+            <div class="container-fluid col-sm-12 c col-lg-6 align-self-center" data-aos="fade-right"  >
+                <img class="img-fluid" src="./img/dude-like.webp" alt="muchacho-alegre" >
             </div>
-            <div class="quienes-somos__info col-sm-12  col-lg-6 mt-auto pt-2 ">
-                <h2 class="fade-in">Quienes Somos</h2>
-                <p>I think there's an artist hidden in the bottom of every single one of us. Isn't that fantastic? You can create anything that makes you happy. We don't have to be concerned about it.</p>
-                <p>Van Dyke Brown is a very nice brown, it's almost like a chocolate brown.I really recommend you use odorless thinner or your spouse is gonna run you right out You can get away with a into the yard and you'll be working let this happen. We just let this flow right out of our minds.</p>
-                <p>If you do too much it's going to lose its effectiveness. Let's get crazy. We don't want to set these clouds on fire. I really recommend you use odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself. Nice little fluffy clouds laying around in the sky being lazy. You can create beautiful things - but you have to see them in your mind first.</p>
-                <a href="./pages/nosotros.html" class="btn btn-red text-center ">
+            <div class="quienes-somos__info col-sm-12  col-lg-6 mt-auto pt-2" >
+                <h2 class="fade-in mb-3" data-aos="zoom-in-left" data-aos-duration="1000">Quienes Somos</h2>
+                <p data-aos="fade" data-aos-duration="1000"> NEGINTSUR ABOGADOS es una firma que brinda servicios de prevención de controversias legales para la identificación y evaluación de elementos que puedan crear riesgo de confrontación o sanciones en las operaciones que realizan nuestros clientes.</p>
+                <p data-aos="fade" data-aos-duration="1000">Estudiamos a fondo los casos y consultas que tenemos a cargo, con el fin de implementar las mejores herramientas y estrategias en las materias legales de nuestra especialidad. Nuestro principal objetivo es proveer soluciones innovadoras que pongan fin a los conflictos, ya sea por medio de un acuerdo, un fallo judicial o un laudo arbitral.</p>
+                <p data-aos="fade" data-aos-duration="1000">El prestigio de nuestra firma se basa en la eficiencia, la eficacia y el profesionalismo de nuestro equipo, así como el servicio personalizado que ofrecemos. La comunicación efectiva y la innovación constante, nos mantienen a la vanguardia de los bufetes de abogados en el país y permiten adaptarnos a las necesidades del mercado bajo los más altos estándares de calidad.</p>
+                <a href="./pages/nosotros.html" class="btn btn-red text-center" data-aos="zoom-in">
                     Saber más
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -72,28 +74,28 @@
                 </a>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End Quienes Somos -->
 
     <!-- Servicios -->
-    <div class="servicios container py-5 ">
-        <h2 class="text-center fade-in">Servicios</h2>
+    <section class="servicios container my-md-4 ">
+        <h2 class="text-center fade-in" data-aos="fade-up data-aos-duration="1000">Servicios</h2>
         <!-- Descripcion de los servicios -->
-        <div class="row py-3 fade-in">
+        <div class="row py-3 fade-in" data-aos="fade-up" data-aos-duration="1000">
             <p>Actualmente, mantenemos dentro de nuestra cartera de clientes a las empresas más representativas del sector Banca y Seguros, Educación, Energía (Minería, Hidrocarburos y Electricidad), Hotelería y Turismo, Infraestructura y Construcción (Cementero y Concretero), y Retail.</p>
             <p>Prestamos asesoría legal especializada tanto a empresas privadas como públicas, acompañándolos en sus negociaciones o procesos para la resolución de conflictos. Aportamos valor agregado de primer nivel que se adapta a las peculiaridades y características específicas de sus negocios, poniendo a su disposición, nuestra amplia experiencia que se respalda en nuestros más de 20 años de presencia en el mercado.</p>
         </div>
         <!-- Galeria de Imagenes -->
-        <div class="row pb-3">
-            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/derecho-laboral.png" alt="Asesoria en Derecho laboral" loading="lazy" >
-            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/transporte-transito.png" alt="Asesoria en transporte y transito" loading="lazy" >
-            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/contratos-cartas-notariales.png" alt="Contratos y Cartas Notariales" loading="lazy">
-            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/registro-de-marca.png" alt=" Registro de Marca Y Logo" loading="lazy">
+        <div class="row pb-3" >
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/derecho-laboral.png" alt="Asesoria en Derecho laboral" loading="lazy" data-aos="zoom-in-left" data-aos-duration="1900">
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/transporte-transito.png" alt="Asesoria en transporte y transito" loading="lazy" data-aos="zoom-in-left" data-aos-duration="2400">
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/contratos-cartas-notariales.png" alt="Contratos y Cartas Notariales" loading="lazy" data-aos="zoom-in-left" data-aos-duration="2600">
+            <img class="col-sm-12 col-md-6 col-lg-3 my-1" src="./img/registro-de-marca.png" alt=" Registro de Marca Y Logo" loading="lazy" data-aos="zoom-in-left" data-aos-duration="3000">
         </div>
         <!-- End Galeria de Imagenes -->
         <!-- boton -->
-        <div class="text-center">
-            <a href="./pages/servicios.html" class="btn btn-red text-center text-white">
+        <div class="text-center" data-aos="fade">
+            <a href="./pages/servicios.html" class="btn btn-red text-center text-white my-md-2">
                 Saber más
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -101,7 +103,7 @@
                     </svg>
             </a>
         </div>
-    </div>
+    </section>
     <!-- End Servicios -->
 
     <!-- Semifooter -->
@@ -158,6 +160,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script>
+        AOS.init({
+            once:true,
+        });
+    </script>
 
 </body>
 

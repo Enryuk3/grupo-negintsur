@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <!-- Title -->
     <title>Servicios</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- NavBar -->
@@ -43,7 +44,7 @@
     <!--Banner-->
     <div class=" banner-contacto">
         <div class="container py-5">
-            <h4 class="text-white fade-in">Servicios</h4>
+            <h4 class="text-white fade-in" data-aos="fade" data-aos-duration="1000">Servicios</h4>
         </div>
     </div>
     <!--End Banner-->
@@ -51,11 +52,13 @@
     <!-- Servicios info-->
     <section class="container servicios-info">
         <div class="row  py-5">
-            <div class="col-12 col-md-6 col-lg-7 fade-in">
+            <div class="col-12 col-md-6 col-lg-7 fade-in" data-aos="fade" data-aos-duration="1000">
                 <p>Nuestro estudio de abogados ofrece a los clientes Asesoría Legal Especializada en forma personalizada, a través de nuestro Staff de Abogados altamente capacitados y con experiencia en las diversas áreas del derecho. </p>
                 <p>Brindamos Asesoría Jurídica de la más alta calidad, personalizando la relación con nuestros clientes, generandoles, discreción, seguridad y comodidad, logrando formar, de esta manera, relaciones de estrecha confianza y de largo plazo.</p>
+                <p>Diseñamos las estrategias más efectivas para empresas tanto nacionales como internaciones de diversos rubros, asesorándolos en la identificación y evaluación de elementos que puedan crear riesgo de confrontación o sanciones en las operaciones que realizan.</p>
+                <p>Escuchamos sus inquietudes y estamos atentos a sus necesidades. Esto nos permite que la elaboración de informes especializados no sea solo para absolver las consultas planteadas, sino también para presentar propuestas de prevención o solución de los conflictos que nos permitan adelantarnos a posibles escenarios.</p>
             </div>
-            <div class="col-12 col-md-6 col-lg-5">
+            <div class="col-12 col-md-6 col-lg-5" data-aos="fade-left" data-aos-duration="1400">
                 <img class="img-fluid" src="../img/smiling-2.webp" alt="nosotros-arrow">
             </div>
         </div>
@@ -144,5 +147,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script>
+        AOS.init({
+            once:true,
+        });
+    </script>
 </body>
 </html>
