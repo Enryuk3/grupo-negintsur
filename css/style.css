@@ -25,8 +25,12 @@
 /* Todas las section */
 section{
     padding: 4% 0;
+    overflow: hidden;
 }
 
+.oferflow-hidden{
+    overflow: hidden;
+}
 /* Seccion Quienes Somos */
 .quienes-somos{
     background-color: #fafbfa;    
