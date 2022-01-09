@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://rsms.me/inter/inter.css");
 
 @import "./variables";
 
@@ -9,6 +10,7 @@ html {
 }
 body {
   overflow: overlay;
+  font-family: $font-general;
 }
 
 /* Scrollbar */
@@ -60,24 +62,26 @@ body {
 }
 
 /* Banner Principal */
+header {
+  z-index: 4;
+}
 .banner {
   @extend %bg-center;
-  background-image: url(../img/hands-wallpaper.webp);
+  font-family: $font-hero;
+  background-image: url(../img/prise.jpg);
   height: 86vh;
+
   &__titulo {
-    font-size: 45px;
     font-weight: 700;
-    line-height: 1.1em;
     color: map-get($colores, "white");
   }
   &__texto {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: map-get($colores, "white");
   }
   @media screen and (max-width: 767px) {
     &__titulo {
-      font-size: 35px;
       text-align: center;
     }
 
@@ -89,6 +93,26 @@ body {
 }
 /* End Banner Principal */
 
+// Botones
+.btn-white {
+  background-color: $primary;
+  color: $white;
+  transition: ease-in-out 0.6s;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+
+.btn-primary-3 {
+  background-color: #1b1f3b;
+  color: $white;
+  transition: ease-in-out 0.6s;
+  &:hover {
+    background-color: #0f1121;
+    color: $white;
+  }
+}
 /* Todas las section */
 
 @mixin overflow-hidden {

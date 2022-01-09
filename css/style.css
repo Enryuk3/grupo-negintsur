@@ -1,199 +1,285 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://rsms.me/inter/inter.css");
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 body {
-  overflow: overlay; }
+  overflow: overlay;
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
   background: transparent;
   width: 10px;
-  height: 10px; }
+  height: 10px;
+}
 
 ::-webkit-scrollbar-thumb {
   background: #a10c08;
-  border-radius: 10px; }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #d12f2a; }
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d12f2a;
+}
 
 ::-webkit-scrollbar-corner {
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
-.banner, .bd-navbar, .banner-contacto, .clouds {
+.banner,
+.bd-navbar,
+.banner-contacto,
+.clouds {
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .txt-primary {
-  color: #a10c08; }
+  color: #a10c08;
+}
 
 .bgc-primary {
-  background-color: #a10c08; }
+  background-color: #a10c08;
+}
 
 .txt-secondary {
-  color: #8f0c09; }
+  color: #8f0c09;
+}
 
 .bgc-secondary {
-  background-color: #8f0c09; }
+  background-color: #8f0c09;
+}
 
 .txt-error {
-  color: #d32752; }
+  color: #d32752;
+}
 
 .bgc-error {
-  background-color: #d32752; }
+  background-color: #d32752;
+}
 
 .txt-info {
-  color: #f6c31c; }
+  color: #f6c31c;
+}
 
 .bgc-info {
-  background-color: #f6c31c; }
+  background-color: #f6c31c;
+}
 
 .txt-blue {
-  color: #1919e6; }
+  color: #1919e6;
+}
 
 .bgc-blue {
-  background-color: #1919e6; }
+  background-color: #1919e6;
+}
 
 .txt-red {
-  color: #e61919; }
+  color: #e61919;
+}
 
 .bgc-red {
-  background-color: #e61919; }
+  background-color: #e61919;
+}
 
 .txt-yellow {
-  color: #e6e619; }
+  color: #e6e619;
+}
 
 .bgc-yellow {
-  background-color: #e6e619; }
+  background-color: #e6e619;
+}
 
 .txt-green {
-  color: #19e635; }
+  color: #19e635;
+}
 
 .bgc-green {
-  background-color: #19e635; }
+  background-color: #19e635;
+}
 
 .txt-orange {
-  color: #ffa600; }
+  color: #ffa600;
+}
 
 .bgc-orange {
-  background-color: #ffa600; }
+  background-color: #ffa600;
+}
 
 .txt-purple {
-  color: #9900ff; }
+  color: #9900ff;
+}
 
 .bgc-purple {
-  background-color: #9900ff; }
+  background-color: #9900ff;
+}
 
 .txt-white {
-  color: #fff; }
+  color: #fff;
+}
 
 .bgc-white {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .txt-black {
-  color: #000; }
+  color: #000;
+}
 
 .bgc-black {
-  background-color: #000; }
+  background-color: #000;
+}
 
 /*Barra de navegacion*/
 .nav-link {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+}
 
 .active {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 .bg-white {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 /* Banner Principal */
+header {
+  z-index: 4;
+}
+
 .banner {
-  background-image: url(../img/hands-wallpaper.webp);
-  height: 86vh; }
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(../img/prise.jpg);
+  height: 86vh;
+}
+.banner__titulo {
+  font-weight: 700;
+  color: #fff;
+}
+.banner__texto {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
   .banner__titulo {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 1.1em;
-    color: #fff; }
+    text-align: center;
+  }
   .banner__texto {
     font-size: 18px;
-    font-weight: 600;
-    color: #fff; }
-  @media screen and (max-width: 767px) {
-    .banner__titulo {
-      font-size: 35px;
-      text-align: center; }
-    .banner__texto {
-      font-size: 18px;
-      text-align: center; } }
+    text-align: center;
+  }
+}
 
 /* End Banner Principal */
+.btn-white {
+  background-color: #a10c08;
+  color: #fff;
+  transition: ease-in-out 0.6s;
+}
+.btn-white:hover {
+  background-color: #fff;
+  color: #a10c08;
+}
+
+.btn-primary-3 {
+  background-color: #1b1f3b;
+  color: #fff;
+  transition: ease-in-out 0.6s;
+}
+.btn-primary-3:hover {
+  background-color: #0f1121;
+  color: #fff;
+}
+
 /* Todas las section */
 section {
   overflow: hidden;
-  padding: 4% 0; }
+  padding: 4% 0;
+}
 
 .oferflow-hidden {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Seccion Quienes Somos */
 .quienes-somos {
-  background-color: #fafbfa; }
-  .quienes-somos__info h2 {
-    text-align: justify; }
-  .quienes-somos__info p {
-    text-align: justify;
-    animation-name: fadeIn;
-    animation-duration: 1s; }
+  background-color: #fafbfa;
+}
+.quienes-somos__info h2 {
+  text-align: justify;
+}
+.quienes-somos__info p {
+  text-align: justify;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
 
 /* End Seccion Quienes Somos */
 /* All buttons */
 .btn__texto {
-  color: #fff; }
+  color: #fff;
+}
 
 .btn svg {
   transition: all 0.5s;
-  transform: scale(0) translateX(0); }
+  transform: scale(0) translateX(0);
+}
 
 .btn:hover svg {
   display: inline-block;
   fill: #fff;
-  transform: scale(1) translateX(1px); }
+  transform: scale(1) translateX(1px);
+}
 
 .btn-red {
   color: #fff;
   background-color: #a10c08;
   border-color: #a10c08;
-  transition: all 0.6s; }
-  .btn-red:hover, .btn-red:focus, .btn-red:active {
-    color: #fff;
-    background-color: #8f0c09;
-    border-color: #8f0c09;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+  transition: all 0.6s;
+}
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+  color: #fff;
+  background-color: #8f0c09;
+  border-color: #8f0c09;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 /* Seccion Servicios */
 .servicios__titulo {
   text-align: center;
-  color: #a10c08; }
+  color: #a10c08;
+}
 
 .servicios__description {
-  text-align: justify; }
+  text-align: justify;
+}
 
 /* background footer */
 .bd-navbar {
-  background-image: url(../img/background-square.webp); }
-  .bd-navbar .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85); }
-    .bd-navbar .navbar-nav .nav-link:hover {
-      color: #fff; }
+  background-image: url(../img/background-square.webp);
+}
+.bd-navbar .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+.bd-navbar .navbar-nav .nav-link:hover {
+  color: #fff;
+}
 
 footer {
   font-family: "Lato", sans-serif;
-  background-color: #8f0c09; }
-  footer .tr {
-    vertical-align: -0.125em;
-    fill: #fff; }
+  background-color: #8f0c09;
+}
+footer .tr {
+  vertical-align: -0.125em;
+  fill: #fff;
+}
 
 /* Fin background footer */
 .fade-in {
@@ -203,59 +289,76 @@ footer {
   animation-direction: normal;
   animation-fill-mode: forwards;
   /* animation-delay: .2s ; */
-  animation-timing-function: ease-in-out; }
+  animation-timing-function: ease-in-out;
+}
 
 @keyframes fadeIn {
   0% {
-    opacity: 0.25; }
+    opacity: 0.25;
+  }
   50% {
-    opacity: 0.5; }
+    opacity: 0.5;
+  }
   75% {
-    opacity: 0.75; }
+    opacity: 0.75;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 /* banner para todos los servicios*/
 .banner-contacto {
   background-image: url(../img/banner2-background.webp);
-  height: auto; }
+  height: auto;
+}
 
 /* End banner para todos los servicios */
 /* Nosotros */
 .nosotros-info p {
-  text-align: justify; }
+  text-align: justify;
+}
 
 .clouds {
-  background-image: url(../img/wallpaper-redclouds.webp); }
-  .clouds__titulo {
-    text-align: center; }
-  .clouds__parrafo {
-    text-align: center; }
-  .clouds__mv {
-    max-width: 30%;
-    height: auto; }
+  background-image: url(../img/wallpaper-redclouds.webp);
+}
+.clouds__titulo {
+  text-align: center;
+}
+.clouds__parrafo {
+  text-align: center;
+}
+.clouds__mv {
+  max-width: 30%;
+  height: auto;
+}
 
 /* End nosotros */
 /* Pagina Servicios */
 .servicios-info p {
-  text-align: justify; }
+  text-align: justify;
+}
 
 .servicios-info__galeria img {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   opacity: 0.9;
-  transition: all 0.8s; }
-  .servicios-info__galeria img:hover {
-    opacity: 1;
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+  transition: all 0.8s;
+}
+.servicios-info__galeria img:hover {
+  opacity: 1;
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
 
 /* End Pagina Servicios */
 /* Asesoria en derecho laboral */
 .derecho-laboral__info p {
-  text-align: justify; }
+  text-align: justify;
+}
 
 /* Background gris */
 .container-bg {
   background-color: #eee;
   margin-top: 35px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+}
